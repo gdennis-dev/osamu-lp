@@ -1,0 +1,1291 @@
+/*--------------------------------------------------------------
+  1) GLOBAL RESET & BASE STYLES
+--------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* A “container” utility for centering */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* LINK / BUTTON RESET */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*==============================================================
+  1) HEADER / HERO SECTION
+================================================================*/
+.hero-section {
+  position: relative;
+  height: 645px;
+  overflow: hidden;
+  background-image: url("../images/Group_Banner.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    height: 687px;
+  }
+}
+
+/* 1.1 Top‐right nav buttons */
+.top-nav {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  z-index: 10;
+  height: 41px;
+}
+
+.top-nav a {
+  height: 100%;
+}
+
+@media (max-width: 1020px) {
+  .top-nav {
+    display: none;
+  }
+}
+
+.nav-btn {
+  height: 100%;
+}
+
+.nav-btn img {
+  height: 100%;
+}
+
+/* 1.3 Scattered stars in front */
+
+/* 1.4 Hero content wrapper */
+
+.hero1 {
+  position: absolute;
+  top: 2.25rem;
+  left: 12.4rem;
+  z-index: 3;
+}
+
+.hero2 {
+  position: absolute;
+  top: 10.8rem;
+  left: 0;
+  z-index: 3;
+}
+
+.hero3 {
+  position: absolute;
+  bottom: 6.925rem;
+  left: 8.54rem;
+  z-index: 3;
+}
+
+@media (max-width: 920px) {
+  .hero1,
+  .hero2,
+  .hero3 {
+    width: 230px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero1,
+  .hero2,
+  .hero3 {
+    width: 180px;
+  }
+  .hero1 {
+    top: 24.4px;
+    left: 33%;
+  }
+  .hero2 {
+    top: 94.3px;
+    left: -9.6px;
+  }
+  .hero3 {
+    position: absolute;
+    top: 114.9px;
+    right: 1px;
+    left: unset;
+  }
+}
+
+.lightleft {
+  position: absolute;
+  left: -16.8rem;
+  top: 2.25rem;
+}
+
+.lightright {
+  position: absolute;
+  right: -16.8rem;
+  top: -1rem;
+}
+
+.rightbottomtext {
+  position: absolute;
+  right: 1.6rem;
+  bottom: 1.25rem;
+  z-index: 4;
+}
+
+@media (max-width: 700px) {
+  .lightleft {
+    left: -26.8rem;
+    top: 2.25rem;
+  }
+
+  .lightright {
+    right: -26.8rem;
+    top: -1rem;
+  }
+
+  .rightbottomtext {
+    width: 135px;
+    right: 1.6rem;
+    bottom: 61px;
+    z-index: 4;
+  }
+}
+
+/* Center: cloud‐shaped text background (simulated with border radius) */
+.hero-text-wrap {
+  position: absolute;
+  bottom: 0;
+  right: -4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1020px) {
+  .hero-text-wrap {
+    width: 351px;
+    height: 500px;
+  }
+  .hero-text-wrap img {
+    object-fit: top;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-text-wrap {
+    height: 266px;
+    left: calc((100% - 351px) / 2);
+  }
+
+  .hero-text-wrap img {
+    object-fit: cover;
+  }
+}
+
+/* Right: main character illustration */
+.main-character {
+  position: relative;
+  margin: auto;
+  width: 600px;
+  min-width: 329px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+}
+.main-character img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1020px) {
+  .main-character {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-character {
+    padding-bottom: 100px;
+  }
+}
+
+/* 1.5 “Home” button at bottom‐left */
+.home-btn1 {
+  width: 294px;
+  height: 83.32px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.banner-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 27.3px;
+  z-index: 10;
+}
+.home-btn1 .arrow {
+  margin-left: 6px;
+  font-size: 1rem;
+}
+@media (max-width: 700px) {
+  .banner-btn {
+    display: none;
+  }
+}
+.star_group_banner1 {
+  position: absolute;
+  bottom: 58.7px;
+  left: calc(50% - 300px);
+}
+.star_group_banner2 {
+  position: absolute;
+  top: 122.4px;
+  left: calc(50% - 300px);
+}
+.star_group_banner3 {
+  position: absolute;
+  top: 119.2px;
+  right: calc(50% - 300px);
+}
+.star_group_banner4 {
+  position: absolute;
+  bottom: 58.7px;
+  right: calc(50% - 300px);
+}
+.star_group_banner5 {
+  display: none;
+  position: absolute;
+  bottom: 179.7px;
+  left: 15.4px;
+}
+.star_group_banner6 {
+  display: none;
+  position: absolute;
+  bottom: 180.7px;
+  right: 15.4px;
+}
+
+@media (max-width: 700px) {
+  .star_group_banner5,
+  .star_group_banner6 {
+    display: block;
+  }
+}
+
+/*==============================================================
+  2) INTRODUCTION & PROFILE SECTION
+================================================================*/
+.intro-section {
+  width: 100%;
+  background: repeating-linear-gradient(
+    to right,
+    #effdff,
+    #effdff 50px,
+    #e5fdff 50px,
+    #e5fdff 100px
+  );
+  padding-top: 5.9rem;
+  padding-bottom: 5.9rem;
+}
+
+.intro-home-btn {
+  display: none;
+  margin: 0 auto 38.5px;
+}
+
+@media (max-width: 700px) {
+  .intro-home-btn {
+    display: block;
+  }
+
+  .intro-section {
+    padding-top: 28.5px;
+  }
+}
+
+.intro-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  min-width: 355px;
+  margin: 0 auto;
+  background-color: #f7f8e7;
+  border: 4px solid #6868fc;
+  border-radius: 16px;
+}
+
+.intro-container_1 {
+  position: relative;
+  padding-top: 55.3px; /* give space for character */
+  padding-left: 10rem;
+  padding-bottom: 6.1rem;
+  border-bottom: 4px solid #6868fc;
+}
+
+@media (max-width: 1000px) {
+  .intro-container_1 {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+}
+
+@media (max-width: 882px) {
+  .intro-container_1 {
+    padding-top: 286.3px;
+  }
+}
+
+/* 2.1 Character standing on top-left of intro box */
+.profile-character {
+  position: absolute;
+  top: 1.8rem;
+  left: 5rem;
+  width: 180px;
+  z-index: 10;
+}
+.profile-character img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .profile-character {
+    left: 1rem;
+  }
+}
+
+@media (max-width: 882px) {
+  .profile-character {
+    top: 1rem;
+    left: calc((100% - 157px) / 2);
+  }
+
+  .profile-character img {
+    height: 302px;
+  }
+}
+
+/* 2.2 White text box for profile */
+.intro-text-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-top: 1.3rem;
+  padding-bottom: 2.2rem;
+  padding-right: 8rem;
+  margin: 0 auto;
+  max-width: 755px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 21.3px;
+}
+
+@media (max-width: 1050px) {
+  .intro-text-box {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 882px) {
+  .intro-text-box {
+    justify-content: center;
+    align-items: center;
+    padding-top: 55.2px;
+  }
+}
+.intro-text-box img {
+  width: 259px;
+  margin-right: 8.5rem;
+}
+@media (max-width: 882px) {
+  .intro-text-box img {
+    margin-right: 0px;
+  }
+}
+.intro-text-box p {
+  font-size: 1.125rem;
+  color: #5d3d7e;
+  width: fit-content;
+}
+@media (max-width: 882px) {
+  .intro-text-box p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.star_group_intro4 {
+  position: absolute;
+  bottom: 62.6px;
+  left: 36.2px;
+}
+
+.star_group_intro5 {
+  position: absolute;
+  top: 63.5px;
+  left: 51.5px;
+}
+
+.star_group_intro6 {
+  position: absolute;
+  top: 142.6px;
+  left: 52.8px;
+}
+
+@media (max-width: 882px) {
+  .star_group_intro4 {
+    bottom: unset;
+    top: 208.6px;
+    left: 36.2px;
+  }
+
+  .star_group_intro5 {
+    left: unset;
+    top: 38.9px;
+    right: 60.2px;
+  }
+
+  .star_group_intro6 {
+    left: unset;
+    top: 83.1px;
+    right: 36.1px;
+  }
+}
+
+/* 2.3 Pill‐shaped “埼玉バーチャル観光大使” button */
+.intro-container_2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 2.3rem;
+  padding-bottom: 1.7rem;
+  border-bottom: 4px solid #6868fc;
+}
+
+.ambassador-btn {
+  cursor: pointer;
+  position: absolute;
+  top: -2.125rem;
+  left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+/* 2.4 Profile heading pill */
+.profile-heading-wrap {
+  padding: 0 12.5px;
+}
+
+@media (max-width: 660px) {
+  .profile-heading-wrap img {
+    width: 329.4px;
+  }
+}
+
+/* 2.5 Blurred‐style image box */
+.intro-container_3 {
+  position: relative;
+}
+
+.profile-image-box {
+  position: relative; /* allow absolutely‐positioned pseudo‐element */
+  margin: 20px auto;
+  width: 541.03px;
+  height: 384.51px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/Group_68779.svg");
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease;
+  z-index: 1;
+}
+
+.profile-image-box img {
+  display: none;
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.profile-image-box:hover img {
+  display: block;
+}
+
+.profile-image-box:hover::before {
+  filter: blur(4px);
+}
+
+@media (max-width: 700px) {
+  .profile-image-box {
+    width: 320px;
+    height: 225.7px;
+  }
+
+  .intro-container_3 {
+    height: 515px !important;
+  }
+}
+
+.profile-callout {
+  position: absolute;
+  bottom: -4.68rem;
+  left: -7.86rem;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+}
+
+@media (max-width: 882px) {
+  .profile-callout {
+    bottom: -4.68rem;
+    left: calc((100% - 341px) / 2);
+  }
+
+  .intro-container_3 {
+    height: 700px;
+  }
+
+  .star_group_intro1 {
+    top: unset;
+    bottom: 206px;
+    left: 21px;
+  }
+}
+
+.star_group_intro1 {
+  position: absolute;
+  top: 58.9px;
+  left: 55.1px;
+}
+
+.star_group_intro2 {
+  position: absolute;
+  bottom: 52.6px;
+  right: 32px;
+}
+
+.star_group_intro3 {
+  position: absolute;
+  bottom: 116.4px;
+  right: 33.9px;
+}
+
+@media (max-width: 882px) {
+  .star_group_intro1 {
+    top: unset;
+    bottom: 206px;
+    left: 21px;
+  }
+}
+
+/*==============================================================
+  3) 埼玉県の魅力紹介! (Card Grid)
+================================================================*/
+.saitama-section {
+  position: relative;
+  background-color: #c5f0fc;
+  background-image: url("../images/Card_Bg.svg"),
+    repeating-linear-gradient(
+      to right,
+      #effdff,
+      #effdff 50px,
+      #e5fdff 50px,
+      #e5fdff 100px
+    );
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow-y: visible;
+  overflow-x: calc(0);
+}
+
+@media (max-width: 645px) {
+  .saitama-section {
+    background-image: url("../images/Card_Bg.svg");
+  }
+}
+
+.saitama-container {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 6rem;
+  padding-bottom: 9.775rem;
+  display: flex;
+  flex-direction: column;
+  gap: 34.7px;
+}
+
+/* 3.1 Section heading */
+.saitama-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.saitama-heading img:first-child {
+  width: 433px;
+}
+
+@media (max-width: 500px) {
+  .saitama-heading img:first-child {
+    width: 302px;
+  }
+}
+
+/* 3.2 Card grid */
+.saitama-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.saitama-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 2px solid #4f46e5;
+  border-radius: 12px;
+  width: calc(25% - 20px);
+  min-width: 175.21px;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 11px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 4;
+}
+
+.saitama-card img {
+  width: 100%;
+}
+.saitama-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-character {
+  width: 251px;
+  object-fit: cover;
+}
+.card-label {
+  font-size: 1rem;
+  color: #5d3d7e;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 1024px) {
+  .saitama-card {
+    width: calc(33.33% - 20px);
+  }
+}
+@media (max-width: 640px) {
+  .saitama-card {
+    width: calc(50% - 20px);
+  }
+}
+
+/* 3.3 Bottom‐right callout */
+.saitama-callout {
+  position: absolute;
+  bottom: 6.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+}
+.saitama-callout img {
+  width: 23.3rem;
+  object-fit: cover;
+}
+
+.star_group_card1 {
+  position: absolute;
+  right: 55px;
+  bottom: 127.8px;
+}
+
+.star_group_card2 {
+  position: absolute;
+  left: 36px;
+  top: calc(50%);
+}
+
+.star_group_card3 {
+  position: absolute;
+  left: 45px;
+  top: 144px;
+}
+
+.star_group_card4 {
+  position: absolute;
+  left: 218.8px;
+  top: 127.8px;
+}
+
+.star_group_card5 {
+  position: absolute;
+  right: 106.4px;
+  top: 126.9px;
+}
+
+.star_group_card6 {
+  display: none;
+  position: absolute;
+  left: 15.4px;
+  top: 137.4px;
+}
+
+.star_group_card7 {
+  display: none;
+  position: absolute;
+  right: 24.9px;
+  top: 65.9px;
+}
+
+@media (max-width: 950px) {
+  .star_group_card2,
+  .star_group_card3,
+  .star_group_card4 {
+    display: none;
+  }
+
+  .star_group_card6 {
+    display: block;
+  }
+}
+
+@media (max-width: 770px) {
+  .star_group_card5 {
+    display: none;
+  }
+
+  .star_group_card7 {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .saitama-callout {
+    position: absolute;
+    bottom: 10.25rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .saitama-callout img {
+    width: 208px;
+  }
+}
+
+.saitama-tape-bg {
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: calc(100% + 3rem);
+  z-index: 20;
+  transform: translateY(50%);
+  transform-origin: bottom center;
+}
+
+.saitama-tape-bg img {
+  width: 100%;
+}
+
+/*==============================================================
+  4) TOPICS CAROUSEL SECTION
+================================================================*/
+.topics-section {
+  position: relative;
+  background-image: url("../images/topic_bg_2.svg"),
+    url("../images/vertical_line_bg.svg");
+  background-position: bottom center, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #fcfcfa;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .topics-section {
+    background-image: url("../images/topic_bg_2.svg"),
+      url("../images/vertical_line_bg.svg");
+  }
+}
+
+/* 4.2 Container & heading */
+.topics-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 93px;
+  padding-bottom: 90px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.topics-container img {
+  width: 15.4rem;
+  margin: 0 auto 63.1px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.topics-carousel {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+.topics-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.topic-card {
+  position: relative;
+  max-width: 326px;
+  height: 380px;
+  background-color: #ffffff;
+  border: 2px solid #4f46e5;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.topic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topic-card img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.topic-title {
+  width: 100%;
+  font-size: 1.05rem;
+  color: #4f46e5;
+  margin-bottom: 22px;
+}
+.topic-desc {
+  width: 100%;
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+.topic-card .card-arrow {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 43.26px;
+  cursor: pointer;
+}
+
+/* 4.4 Carousel dots */
+.topics-dots {
+  margin-top: 40px;
+  text-align: center;
+}
+.topics-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #4f46e5;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.topics-dots .dot.active,
+.topics-dots .dot:hover {
+  background-color: #4f46e5;
+}
+
+/*==============================================================
+  5) 春日部つくしイラストバナー SECTION
+================================================================*/
+.illustration-banner {
+  background-color: #fcfcfa;
+  background-image: url("../images/vertical_line_bg.svg");
+  background-position: top center;
+  background-size: cover;
+  padding: 60px 0 40px;
+  text-align: center;
+  position: relative;
+}
+.illus-header {
+  width: 90%;
+  max-width: 443px;
+  margin-bottom: 21.8px;
+}
+.illus-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 86.4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 8.36rem;
+}
+.illus-left-char img,
+.illus-right-char img {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.illus-right-char {
+  background-image: url("../images/advert_2_bg.svg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid #6868fc;
+  border-radius: 18px;
+  max-width: 1000px;
+  width: 100%;
+  height: fit-content;
+  min-height: 180px;
+  position: relative;
+
+  /* テキストを中央揃えにしておく */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.illus-title {
+  margin: 20px auto 0;
+  font-size: 1.8rem;
+  color: #5d3d7e;
+  border-radius: 4px;
+  line-height: 1.25;
+}
+
+.illus-desc {
+  width: fit-content;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 17px 6px 32px;
+  font-size: 1rem;
+  color: #5d3d7e;
+  background-color: #ffe6fc;
+  border-radius: 18px;
+}
+
+@media (max-width: 965px) {
+  .illus-title {
+    width: 30%;
+    min-width: 127px;
+    font-size: 21px;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .illus-desc {
+    width: 40%;
+    min-width: 208px;
+    font-size: 12px;
+    padding: 4px 14px 5px 28px;
+    display: inline-block;
+    word-break: break-word;
+    white-space: normal;
+  }
+}
+
+.illus-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.illus-right-char .hero-twitter {
+  width: 227px;
+  position: absolute;
+  bottom: 0;
+  left: 41px;
+}
+
+.illus-right-char .hero-duck {
+  width: 177px;
+  position: absolute;
+  bottom: 15px;
+  right: 50.6px;
+}
+
+@media (max-width: 830px) {
+  .illus-right-char .hero-twitter {
+    left: -12px;
+  }
+
+  .illus-right-char .hero-duck {
+    right: -12px;
+  }
+}
+
+@media (max-width: 630px) {
+  .illus-right-char .hero-twitter {
+    width: 127px;
+    top: -20px;
+  }
+
+  .illus-right-char .hero-duck {
+    width: 97px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_light_left {
+    left: -370px;
+  }
+  .contact_light_right {
+    right: -320px;
+  }
+}
+
+/*==============================================================
+  7) SHARE SECTION
+================================================================*/
+.share-section {
+  background-color: #d6ecff;
+  padding: 60px 0 0px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.share-text {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 36.6px;
+  z-index: 3;
+}
+.share-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 98px 24px;
+}
+.share-icon {
+  width: 75px;
+  height: 75px;
+  border: 4px solid #6868fc;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.share-icon img {
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.share-icon:hover img {
+  transform: scale(1.2);
+}
+.share-icon-twitter {
+  width: 30px;
+}
+.share-icon-insta {
+  width: 35px;
+}
+.share-icon-face {
+  width: 41.5px;
+}
+.share-icon-line {
+  width: 53px;
+}
+.share-icon-link {
+  width: 30px;
+}
+
+/* 7.1 Share character callout */
+.share-character-callout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+.share-character-callout img {
+  width: 453px;
+  object-fit: cover;
+  z-index: 3;
+}
+.contact_light_left {
+  position: absolute;
+  top: 54.3px;
+  left: -270px;
+  z-index: 1;
+}
+.contact_light_right {
+  position: absolute;
+  top: 54.3px;
+  right: -190px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .contact_light_left {
+    left: -370px;
+  }
+  .contact_light_right {
+    right: -320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact_light_left {
+    left: -450px;
+  }
+  .contact_light_right {
+    right: -430px;
+  }
+}
+
+/*==============================================================
+  8) FOOTER
+================================================================*/
+.page-footer {
+  background-image: url("../images/footer_bg.svg");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 225px;
+  position: relative;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 19px 35px 50px;
+}
+
+.footer-logo-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-logo-wrap img:first-child {
+  width: 226px;
+}
+.footer-logo-wrap img:last-child {
+  width: 127.2px;
+}
+
+/* Footer navigation buttons */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.footer-copyright {
+  width: 100%;
+  background-color: #6868fc;
+  color: white;
+  font-family: "Noto Sans JP";
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 7px 0;
+}
+
+@media (max-width: 530px) {
+  .footer-copyright {
+    font-size: 11px;
+  }
+}
+@media (max-width: 642px) {
+  .footer-inner {
+    flex-direction: column-reverse;
+    padding-top: 51.5px;
+  }
+}
+@media (max-width: 772px) {
+  .footer-logo-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.topics-btn {
+  color: #5d3d7e; /* テキストは白で */
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  background-color: #f7d3ff;
+  padding: 0.6rem 2.5rem;
+  border-radius: 999px;
+  box-shadow: 0 0 0 3px #6868fc, 0 0 0 10px #ffffff;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.topics-btn:hover {
+  transform: scale(1.1);
+}

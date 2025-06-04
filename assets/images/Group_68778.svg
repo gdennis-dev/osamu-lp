@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="294.23" height="83.32" viewBox="0 0 294.23 83.32">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7d3ff"/>
+      <stop offset="1" stop-color="#ffd8f4"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_68778" data-name="Group 68778" transform="translate(-528.122 157.71)">
+    <rect id="Rectangle_5039" data-name="Rectangle 5039" width="294.23" height="83.32" rx="17" transform="translate(528.122 -157.71)" fill="#fff"/>
+    <g id="Rectangle_4811" data-name="Rectangle 4811" transform="translate(537.122 -148.71)" stroke="#8780ff" stroke-width="3" fill="url(#linear-gradient)">
+      <rect width="277.23" height="66.32" rx="13" stroke="none"/>
+      <rect x="1.5" y="1.5" width="274.23" height="63.32" rx="11.5" fill="none"/>
+    </g>
+    <ellipse id="Ellipse_266" data-name="Ellipse 266" cx="20.96" cy="20.959" rx="20.96" ry="20.959" transform="translate(760.31 -137.009)" fill="#fff"/>
+    <path id="Polygon_58" data-name="Polygon 58" d="M6.986,0l6.986,8.8H0Z" transform="translate(786.815 -122.602) rotate(90)" fill="#8780ff"/>
+    <text id="ちょこたび埼玉TOPへ" transform="translate(559.864 -109.326)" fill="#5d3d7e" font-size="18" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">ちょこたび埼玉</tspan><tspan y="0" font-family="SegoeUI, Segoe UI">TOP</tspan><tspan y="0">へ</tspan></text>
+  </g>
+</svg>

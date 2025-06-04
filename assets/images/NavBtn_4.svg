@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="199" height="79" viewBox="0 0 199 79">
+  <defs>
+    <filter id="Rectangle_570" x="0" y="0" width="199" height="79" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.921" y1="0.5" x2="0.117" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7d3ff"/>
+      <stop offset="1" stop-color="#ffd8f4"/>
+    </linearGradient>
+  </defs>
+  <g id="NavBtn_4" transform="translate(-1156.855 -6.146)">
+    <g transform="matrix(1, 0, 0, 1, 1156.85, 6.15)" filter="url(#Rectangle_570)">
+      <rect id="Rectangle_570-2" data-name="Rectangle 570" width="181" height="61" rx="30.5" transform="translate(9 9)" fill="#fff"/>
+    </g>
+    <g id="Rectangle_569" data-name="Rectangle 569" transform="translate(1172.855 21.146)" stroke="#6868fc" stroke-width="3" fill="url(#linear-gradient)">
+      <rect width="167" height="49" rx="24.5" stroke="none"/>
+      <rect x="1.5" y="1.5" width="164" height="46" rx="23" fill="none"/>
+    </g>
+    <text id="ちょこたび埼玉" transform="translate(1203.855 52.146)" fill="#5d3d7e" font-size="15" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">ちょこたび埼玉</tspan></text>
+  </g>
+</svg>

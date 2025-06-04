@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="225.497" height="79" viewBox="0 0 225.497 79">
+  <defs>
+    <filter id="Rectangle_5139" x="0" y="0" width="225.497" height="79" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.921" y1="0.5" x2="0.117" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7d3ff"/>
+      <stop offset="1" stop-color="#ffd8f4"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_77089" data-name="Group 77089" transform="translate(-563.751 -1508.215)">
+    <g transform="matrix(1, 0, 0, 1, 563.75, 1508.21)" filter="url(#Rectangle_5139)">
+      <rect id="Rectangle_5139-2" data-name="Rectangle 5139" width="207.497" height="61" rx="30.5" transform="translate(9 9)" fill="#fff"/>
+    </g>
+    <g id="Rectangle_5138" data-name="Rectangle 5138" transform="translate(579.751 1523.215)" stroke="#6868fc" stroke-width="3" fill="url(#linear-gradient)">
+      <rect width="193.497" height="49" rx="24.5" stroke="none"/>
+      <rect x="1.5" y="1.5" width="190.497" height="46" rx="23" fill="none"/>
+    </g>
+    <text id="プロフィールを見る" transform="translate(609 1554.215)" fill="#5d3d7e" font-size="15" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">プロフィールを見る</tspan></text>
+  </g>
+</svg>
