@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
   1) GLOBAL RESET & BASE STYLES
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "MPlus1c_bold"; /* You can name it anything */
+  src: url("../fonts/mplus-1c-bold.ttf") format("opentype");
+}
+
+:root {
+  --font-main: "MPlus1c_bold";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   background-color: #fafafa;
   color: #333;
   line-height: 1.5;
@@ -572,6 +581,11 @@ a {
   display: flex;
   align-items: center;
   z-index: 4;
+  max-width: 341px;
+}
+
+.profile-callout img {
+  width: 100%;
 }
 
 @media (max-width: 882px) {
@@ -869,9 +883,22 @@ a {
   margin: 0 auto 63.1px;
 }
 
+.customized-swiper {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  position: relative;
+  min-height: 450px;
+}
+
 .wrapper {
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
+}
+
+.dot-swiper {
+  bottom: -50px !important;
+  height: 10px;
 }
 
 .topics-carousel {
@@ -1136,6 +1163,7 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 3;
+  background-color: white;
 }
 .share-icon img {
   object-fit: cover;
@@ -1166,6 +1194,11 @@ a {
   align-items: center;
   justify-content: center;
   margin-left: 150px;
+}
+@media (max-width: 670px) {
+  .share-character-callout {
+    margin-left: 0;
+  }
 }
 .share-character-callout img {
   width: 453px;
