@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: "MPlus1c_bold"; /* You can name it anything */
-  src: url("../fonts/mplus-1c-light.ttf") format("opentype");
+  src: url("../fonts/mplus-1c-regular.ttf") format("opentype");
 }
 
 :root {
