@@ -547,15 +547,16 @@ a {
   z-index: 1;
 }
 
-.profile-image-box img {
+.profile-image-box a {
   display: none;
   position: relative;
   z-index: 2;
-  object-fit: contain;
   cursor: pointer;
+  width: 200px;
+  padding-left: 20px !important;
 }
 
-.profile-image-box:hover img {
+.profile-image-box:hover a {
   display: block;
 }
 
@@ -1307,12 +1308,10 @@ a {
 
 .topics-btn {
   color: #5d3d7e; /* テキストは白で */
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-size: 15px;
   cursor: pointer;
   background-color: #f7d3ff;
-  padding: 0.6rem 2.5rem;
+  padding: 0.7rem 1.4rem;
   border-radius: 999px;
   box-shadow: 0 0 0 3px #6868fc, 0 0 0 10px #ffffff;
   border: none;
