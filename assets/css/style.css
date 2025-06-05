@@ -16,7 +16,7 @@ body {
   background-color: #fafafa;
   color: #333;
   line-height: 1.5;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* A “container” utility for centering */
