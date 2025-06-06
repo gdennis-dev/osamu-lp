@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: "MPlus1c_bold"; /* You can name it anything */
-  src: url("../fonts/mplus-1c-regular.ttf") format("opentype");
+  src: url("../fonts/mplus-1c-bold.ttf") format("opentype");
 }
 
 :root {
@@ -251,7 +251,13 @@ a {
 .home-btn1 {
   width: 294px;
   height: 83.32px;
-  transition: background-color 0.2s, color 0.2s;
+  background-image: url("../images/home-btn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: 31.7px;
 }
 .banner-btn {
   position: absolute;
@@ -259,10 +265,10 @@ a {
   left: 27.3px;
   z-index: 10;
 }
-.home-btn1 .arrow {
-  margin-left: 6px;
-  font-size: 1rem;
+.marginx-auto {
+  margin: 0 auto 38.5px;
 }
+
 @media (max-width: 700px) {
   .banner-btn {
     display: none;
@@ -326,7 +332,6 @@ a {
 
 .intro-home-btn {
   display: none;
-  margin: 0 auto 38.5px;
 }
 
 @media (max-width: 700px) {
@@ -507,6 +512,16 @@ a {
   left: auto;
   background-color: transparent;
   border: none;
+  background-image: url(../images/intro_middle_button.svg);
+  width: 321.11px;
+  height: 62.83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  padding-bottom: 10px;
+  color: #5d3d7e;
+  font-family: var(--font-main);
 }
 
 /* 2.4 Profile heading pill */
@@ -552,7 +567,6 @@ a {
   position: relative;
   z-index: 2;
   cursor: pointer;
-  width: 200px;
   padding-left: 20px !important;
 }
 
@@ -995,7 +1009,17 @@ a {
 .illus-header {
   width: 90%;
   max-width: 443px;
-  margin-bottom: 21.8px;
+  height: 39px;
+  background-image: url(../images/advert_title.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 21.8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  color: #5d3d7e;
 }
 .illus-content {
   display: flex;
@@ -1035,7 +1059,7 @@ a {
 
 .illus-title {
   margin: 20px auto 0;
-  font-size: 1.8rem;
+  font-size: 29px;
   color: #5d3d7e;
   border-radius: 4px;
   line-height: 1.25;
@@ -1046,7 +1070,7 @@ a {
   display: inline-block;
   margin: 0 auto;
   padding: 5px 17px 6px 32px;
-  font-size: 1rem;
+  font-size: 17px;
   color: #5d3d7e;
   background-color: #ffe6fc;
   border-radius: 18px;
@@ -1080,7 +1104,7 @@ a {
   padding: 12px 0;
   background-color: #4f46e5;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 23px;
   font-weight: 600;
   line-height: 1.2;
   border-bottom-left-radius: 12px;
@@ -1094,20 +1118,9 @@ a {
   left: 41px;
 }
 
-.illus-right-char .hero-duck {
-  width: 177px;
-  position: absolute;
-  bottom: 15px;
-  right: 50.6px;
-}
-
 @media (max-width: 830px) {
   .illus-right-char .hero-twitter {
     left: -12px;
-  }
-
-  .illus-right-char .hero-duck {
-    right: -12px;
   }
 }
 
@@ -1145,8 +1158,19 @@ a {
 .share-text {
   font-size: 1rem;
   color: #4b5563;
-  margin-bottom: 36.6px;
   z-index: 3;
+  width: 178.5px;
+  height: 31.46px;
+  background-image: url(../images/contact_title.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 36.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: #5d3d7e;
 }
 .share-icons {
   display: flex;
