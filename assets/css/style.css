@@ -724,6 +724,7 @@ a {
   padding: 11px;
   transition: transform 0.2s, box-shadow 0.2s;
   z-index: 4;
+  cursor: pointer;
 }
 
 .saitama-card img {
