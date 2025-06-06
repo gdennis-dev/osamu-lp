@@ -258,6 +258,8 @@ a {
   display: flex;
   align-items: center;
   padding-left: 31.7px;
+  font-size: 18px;
+  color: #5d3d7e;
 }
 .banner-btn {
   position: absolute;
