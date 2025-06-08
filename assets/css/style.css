@@ -447,9 +447,10 @@ a {
   }
 }
 .intro-text-box p {
-  font-size: 1.125rem;
+  font-size: 18px;
   color: #5d3d7e;
   width: fit-content;
+  line-height: 35px;
 }
 @media (max-width: 882px) {
   .intro-text-box p {
@@ -560,24 +561,17 @@ a {
   background-image: url("../images/Group_68779.svg");
   background-size: cover;
   background-position: center;
+  filter: blur(3px);
   transition: filter 0.3s ease;
   z-index: 1;
 }
 
 .profile-image-box a {
-  display: none;
+  display: block;
   position: relative;
   z-index: 2;
   cursor: pointer;
   padding-left: 20px !important;
-}
-
-.profile-image-box:hover a {
-  display: block;
-}
-
-.profile-image-box:hover::before {
-  filter: blur(4px);
 }
 
 @media (max-width: 700px) {
@@ -1105,7 +1099,7 @@ a {
   left: 0;
   width: 100%;
   padding: 12px 0;
-  background-color: #4f46e5;
+  background-color: #6868fc;
   color: #ffffff;
   font-size: 23px;
   font-weight: 600;
