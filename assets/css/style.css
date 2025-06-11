@@ -2,12 +2,13 @@
   1) GLOBAL RESET & BASE STYLES
 --------------------------------------------------------------*/
 @font-face {
-  font-family: "MPlus1c_bold"; /* You can name it anything */
-  src: url("../fonts/mplus-1c-bold.ttf") format("opentype");
+  font-family: "Noto Sans JP"; /* You can name it anything */
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap")
+    format("opentype");
 }
 
 :root {
-  --font-main: "MPlus1c_bold";
+  --font-main: "Noto Sans JP";
 }
 
 * {
