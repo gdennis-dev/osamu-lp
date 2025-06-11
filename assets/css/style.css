@@ -1,15 +1,6 @@
 /*--------------------------------------------------------------
   1) GLOBAL RESET & BASE STYLES
 --------------------------------------------------------------*/
-@font-face {
-  font-family: "Noto Sans JP"; /* You can name it anything */
-  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap")
-    format("opentype");
-}
-
-:root {
-  --font-main: "Noto Sans JP";
-}
 
 * {
   margin: 0;
@@ -22,7 +13,8 @@ html {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: "Noto Sans JP";
+  font-weight: 600;
   background-color: #fafafa;
   color: #333;
   line-height: 1.5;
