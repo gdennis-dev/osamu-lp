@@ -938,7 +938,7 @@ a {
   position: relative;
   min-height: 450px;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .wrapper {
@@ -954,10 +954,14 @@ a {
 
 .card-list-container {
   height: 100%;
+  padding-top: 10px;
 }
 
 .card-list {
   height: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 15px;
 }
 
 .topics-carousel {
@@ -1004,14 +1008,12 @@ a {
   font-size: 1.05rem;
   color: #4f46e5;
   margin-bottom: 22px;
-  text-align: center;
 }
 .topic-desc {
   width: 100%;
   font-size: 0.85rem;
   color: #4b5563;
   margin-bottom: 12px;
-  text-align: center;
 }
 .topic-card .card-arrow {
   position: absolute;
