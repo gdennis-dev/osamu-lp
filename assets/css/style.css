@@ -1004,12 +1004,14 @@ a {
   font-size: 1.05rem;
   color: #4f46e5;
   margin-bottom: 22px;
+  text-align: center;
 }
 .topic-desc {
   width: 100%;
   font-size: 0.85rem;
   color: #4b5563;
   margin-bottom: 12px;
+  text-align: center;
 }
 .topic-card .card-arrow {
   position: absolute;
@@ -1381,11 +1383,12 @@ a {
   font-size: 15px;
   cursor: pointer;
   background-color: #f7d3ff;
-  padding: 0.7rem 1.4rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 999px;
   box-shadow: 0 0 0 3px #6868fc, 0 0 0 10px #ffffff;
   border: none;
   transition: transform 0.2s ease;
+  text-align: center;
 }
 
 .topics-btn:hover {
