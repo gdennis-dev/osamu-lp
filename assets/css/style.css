@@ -1138,6 +1138,12 @@ a {
   display: none;
 }
 
+.illus-right-char {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 500px) {
   .illus-left-char {
     display: none;
@@ -1146,6 +1152,9 @@ a {
     display: block !important;
     margin-right: 12px;
   }
+  .illus-right-char {
+    padding-right: 12px;
+  }
 }
 
 .illus-left-char img,
@@ -1153,11 +1162,6 @@ a {
 .illus-right-char img {
   max-width: 1000px;
   width: 100%;
-}
-
-.illus-right-char {
-  width: 100%;
-  padding-right: 12px;
 }
 
 .illus-right-char a {

@@ -442,32 +442,84 @@
     <section class="share-section">
       <div class="share-text">シェアする</div>
       <div class="share-icons">
-        <a href="#" class="share-icon"
+        <a
+          href="https://twitter.com/intent/tweet?url=https://gdennis-dev.github.io/osamu-lp/&text=春日部つくし"
+          onclick="window.open(
+    this.href,
+    'twitter-share-dialog',
+    'width=550,height=420,menubar=no,toolbar=no,resizable=yes,scrollbars=yes'
+  ); return false;"
+          target="_blank"
+          class="share-icon"
           ><img
             class="share-icon-twitter"
             src="assets/images/Twitter_Logo.svg"
             alt="X"
         /></a>
-        <a href="#" class="share-icon"
+        <a
+          href="#"
+          onclick="
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: 'Check this out!',
+        url: 'https://gdennis-dev.github.io/osamu-lp/'
+      }).catch(err => console.error(err));
+    } else {
+      prompt('Copy this link to share on Instagram:', 'https://gdennis-dev.github.io/osamu-lp/');
+    }
+    return false;
+  "
+          target="_blank"
+          class="share-icon"
           ><img
             class="share-icon-insta"
             src="assets/images/Instagram_Glyph_Gradient.svg"
             alt="Instagram"
         /></a>
-        <a href="#" class="share-icon"
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://gdennis-dev.github.io/osamu-lp/"
+          onclick="window.open(
+    this.href,
+    'fb-share-dialog',
+    'width=550,height=420,menubar=no,toolbar=no,resizable=yes,scrollbars=yes'
+  ); return false;"
+          target="_blank"
+          class="share-icon"
           ><img
             class="share-icon-face"
             src="assets/images/Facebook_Logo_Primary.svg"
             alt="Facebook"
         /></a>
-        <a href="#" class="share-icon"
+        <a
+          href="https://social-plugins.line.me/lineit/share?url=https://gdennis-dev.github.io/osamu-lp/"
+          onclick="window.open(
+    this.href,
+    'line-share-dialog',
+    'width=550,height=420,menubar=no,toolbar=no,resizable=yes,scrollbars=yes'
+  ); return false;"
+          target="_blank"
+          class="share-icon"
           ><img
             class="share-icon-line"
             src="assets/images/Line_Logo.svg"
             alt="LINE"
         /></a>
         <a
-          href="blogger.kuwashira.com/blog-vaster2-sns-button/"
+          href="#"
+          onclick="
+    (function() {
+      const url = window.location.href;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url)
+          .then(() => console.log('URL copied to clipboard!'))
+          .catch(err => console.log('Failed to copy: '+err));
+      } else {
+        document.body.removeChild(tmp);
+      }
+    })();
+    return false;
+  "
           class="share-icon"
           ><img
             class="share-icon-link"
