@@ -512,8 +512,8 @@
       const url = window.location.href;
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url)
-          .then(() => console.log('URL copied to clipboard!'))
-          .catch(err => console.log('Failed to copy: '+err));
+          .then(() => alert('URL copied to clipboard!'))
+          .catch(err => alert('Failed to copy: '+err));
       } else {
         document.body.removeChild(tmp);
       }
